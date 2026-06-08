@@ -1,6 +1,0 @@
-{
-  "name": "Voya",
-  "description": "تطبيق Voya لمشاركة وكراء السيارات الفاخرة والاقتصادية في الجزائر بمزايا عصرية وواجهة هاتف ذكي متكاملة.",
-  "requestFramePermissions": ["geolocation"],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
-}
