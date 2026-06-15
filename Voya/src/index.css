@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "IBM Plex Sans Arabic", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+/* Custom styles for native feeling */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Input range styling */
+input[type="range"] {
+  accent-color: #6d28d9;
+}
+
+/* Native tap highlight preview */
+button, a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Direction configuration */
+html, body {
+  direction: rtl;
+  font-family: "IBM Plex Sans Arabic", system-ui, sans-serif;
+  background-color: #09090a;
+  user-select: none;
+  overflow-x: hidden;
+}
+
+/* Custom Purple Balls Loader from Uiverse.io - 50% Scaled Down */
+.loader__balls {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.loader__balls__group {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  height: 40px;
+  width: 18px;
+}
+.ball {
+  height: 12px;
+  width: 12px;
+  border-radius: 6px;
+  position: absolute;
+  transform-origin: bottom;
+}
+
+/* ANIMATION BALL 1 */
+.loader__balls__group .item1 {
+  background-color: #b5b2ff;
+  animation-name: jumpinBallAnimation1;
+  animation-duration: 1000ms;
+  animation-iteration-count: infinite;
+  animation-delay: 0ms;
+}
+@keyframes jumpinBallAnimation1 {
+  0% {
+    transform: translateY(0) scale(1, 1);
+  }
+  10% {
+    transform: translateY(0) scale(1.3, 0.8);
+  }
+  11% {
+    transform: translateY(0) scale(0.7, 1.2);
+    animation-timing-function: cubic-bezier(0, 0, 0.5, 1);
+  }
+  39% {
+    transform: translateY(-27px) scale(1);
+    animation-timing-function: cubic-bezier(0, 0, 0.5, 1);
+  }
+  40% {
+    transform: translateY(-27px) scale(1);
+  }
+  41% {
+    transform: translateY(-27px) scale(1);
+    animation-timing-function: cubic-bezier(1, 0, 1, 0);
+  }
+  69% {
+    transform: translateY(0px) scale(1, 1);
+    animation-timing-function: cubic-bezier(1, 0, 1, 0);
+  }
+  70% {
+    transform: translateY(0) scale(1.5, 0.4);
+  }
+  80% {
+    transform: translateY(0) scale(0.8, 1.2);
+  }
+  90% {
+    transform: translateY(0) scale(1.1, 0.8);
+  }
+  100% {
+    transform: translateY(0) scale(1, 1);
+  }
+}
+
+/* ANIMATION BALL 2 */
+.loader__balls__group .item2 {
+  background-color: #7f83f2;
+  animation-name: jumpinBallAnimation2;
+  animation-duration: 1000ms;
+  animation-iteration-count: infinite;
+  animation-delay: 100ms;
+}
+@keyframes jumpinBallAnimation2 {
+  0% {
+    transform: translateY(0) scale(1, 1);
+  }
+  10% {
+    transform: translateY(0) scale(1.3, 0.8);
+  }
+  11% {
+    transform: translateY(0) scale(0.7, 1.2);
+    animation-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
+  }
+  39% {
+    transform: translateY(-27px) scale(1);
+    animation-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
+  }
+  40% {
+    transform: translateY(-27px) scale(1);
+  }
+  41% {
+    transform: translateY(-27px) scale(1);
+    animation-timing-function: cubic-bezier(1, 0, 1, 0.5);
+  }
+  69% {
+    transform: translateY(0px) scale(1, 1);
+    animation-timing-function: cubic-bezier(1, 0, 1, 0.5);
+  }
+  70% {
+    transform: translateY(0) scale(1.5, 0.4);
+  }
+  80% {
+    transform: translateY(0) scale(0.8, 1.2);
+  }
+  90% {
+    transform: translateY(0) scale(1.1, 0.8);
+  }
+  100% {
+    transform: translateY(0) scale(1, 1);
+  }
+}
+
+/* ANIMATION BALL 3 */
+.loader__balls__group .item3 {
+  background-color: #5c61ec;
+  animation-name: jumpinBallAnimation3;
+  animation-duration: 1000ms;
+  animation-iteration-count: infinite;
+  animation-delay: 200ms;
+}
+@keyframes jumpinBallAnimation3 {
+  0% {
+    transform: translateY(0) scale(1, 1);
+  }
+  10% {
+    transform: translateY(0) scale(1.3, 0.8);
+  }
+  11% {
+    transform: translateY(0) scale(0.7, 1.2);
+    animation-timing-function: cubic-bezier(0, 1, 0.5, 1);
+  }
+  39% {
+    transform: translateY(-27px) scale(1);
+    animation-timing-function: cubic-bezier(0, 1, 0.5, 1);
+  }
+  40% {
+    transform: translateY(-27px) scale(1);
+  }
+  41% {
+    transform: translateY(-27px) scale(1);
+    animation-timing-function: cubic-bezier(1, 0, 1, 1);
+  }
+  69% {
+    transform: translateY(0px) scale(1, 1);
+    animation-timing-function: cubic-bezier(1, 0, 1, 1);
+  }
+  70% {
+    transform: translateY(0) scale(1.5, 0.4);
+  }
+  80% {
+    transform: translateY(0) scale(0.8, 1.2);
+  }
+  90% {
+    transform: translateY(0) scale(1.1, 0.8);
+  }
+  100% {
+    transform: translateY(0) scale(1, 1);
+  }
+}
+
+/* Custom Purple Loading Page Spinner from Uiverse.io */
+.spinner {
+  width: 56px;
+  height: 56px;
+  display: grid;
+  border: 4px solid #0000;
+  border-radius: 50%;
+  border-right-color: #5c61ec;
+  animation: spinner-a4dj62 1s infinite linear;
+}
+
+.spinner::before,
+.spinner::after {
+  content: "";
+  grid-area: 1/1;
+  margin: 2px;
+  border: inherit;
+  border-radius: 50%;
+  animation: spinner-a4dj62 2s infinite;
+}
+
+.spinner::before {
+  border-right-color: #7f83f2;
+}
+
+.spinner::after {
+  margin: 8px;
+  animation-duration: 3s;
+  border-right-color: #b5b2ff;
+}
+
+@keyframes spinner-a4dj62 {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+/* Custom Purple Shimmer Effect for beautiful Skeleton Loader */
+@keyframes shimmerAnim {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.shimmer-bg {
+  background: linear-gradient(
+    90deg,
+    #18181b 25%,
+    #212035 40%,
+    rgba(92, 97, 236, 0.18) 50%,
+    #212035 60%,
+    #18181b 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmerAnim 1.5s infinite linear;
+}
+
+/* --- High-end Glassmorphic Style specifically for Back/Return Buttons --- */
+.glass-back-btn {
+  position: relative !important;
+  overflow: hidden !important;
+  backdrop-filter: blur(14px) !important;
+  -webkit-backdrop-filter: blur(14px) !important;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  background: rgba(255, 255, 255, 0.08) !important;
+  border: 1px solid rgba(255, 255, 255, 0.18) !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35), inset 0 1px 1px rgba(255, 255, 255, 0.15) !important;
+}
+
+.glass-back-btn:hover {
+  background: rgba(255, 255, 255, 0.18) !important;
+  border-color: rgba(255, 255, 255, 0.3) !important;
+  box-shadow: 0 6px 26px rgba(0, 0, 0, 0.45), inset 0 1px 1px rgba(255, 255, 255, 0.25) !important;
+}
+
+.glass-back-btn:active {
+  transform: scale(0.95) !important;
+}
+
+

@@ -1,0 +1,6 @@
+{
+  "name": "درايف RENT",
+  "description": "تطبيق درايف RENT لمشاركة وكراء السيارات الفاخرة والاقتصادية في الجزائر بمزايا عصرية وواجهة هاتف ذكي متكاملة.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
